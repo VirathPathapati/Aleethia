@@ -1,0 +1,163 @@
+/* ALEETHIA
+   Arts in Society
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f4f0e8;
+    color: #24231f;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    padding: 70px 8% 45px;
+    border-bottom: 1px solid #c9c2b5;
+}
+
+header h1 {
+    font-size: 72px;
+    letter-spacing: 8px;
+    font-weight: normal;
+}
+
+header p {
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #6b665d;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 30px;
+    padding: 18px 8%;
+    border-bottom: 1px solid #c9c2b5;
+    background: #eee9df;
+}
+
+nav a {
+    color: #24231f;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 8%;
+}
+
+/* Introduction */
+
+main > section:first-child {
+    max-width: 850px;
+    margin-bottom: 90px;
+}
+
+main > section:first-child h2 {
+    font-size: 46px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+main > section:first-child p {
+    font-size: 20px;
+    color: #625d54;
+}
+
+/* Explore section */
+
+section h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+
+section:last-child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+section:last-child h2 {
+    grid-column: 1 / -1;
+}
+
+section:last-child div {
+    min-height: 190px;
+    padding: 28px;
+    border: 1px solid #c9c2b5;
+    background: #faf7f0;
+    transition: 0.2s ease;
+}
+
+section:last-child div:hover {
+    transform: translateY(-4px);
+    border-color: #777064;
+}
+
+section:last-child h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+section:last-child p {
+    color: #6b665d;
+}
+
+/* Footer */
+
+footer {
+    padding: 35px 8%;
+    border-top: 1px solid #c9c2b5;
+    color: #777064;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    section:last-child {
+        grid-template-columns: 1fr;
+    }
+
+    main > section:first-child h2 {
+        font-size: 36px;
+    }
+}
